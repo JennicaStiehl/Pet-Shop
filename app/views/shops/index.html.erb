@@ -1,0 +1,7 @@
+<h1>Find a Pet Shop!</h1>
+<% @shops.each do |shop| %>
+<%= link_to "#{shop.shop_name}", shop_path(shop.id) %>
+<%= shop.city %>
+
+<% end %>
+<%= link_to "Add a Shop", new_shop_path %>
